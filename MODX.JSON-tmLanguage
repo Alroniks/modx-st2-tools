@@ -1,0 +1,55 @@
+{ 
+  "name": "MODX",
+  	"scopeName": "source.modx",
+  	"fileTypes": [
+  		"ch.html",
+	  	"pl.php",
+	  	"sn.php",
+	  	"tp.html"
+  	],
+  	"patterns": [
+      {
+        "name": "comment.block",
+        "begin": "\\[\\[-",
+        "end": "\\]\\]"
+      },
+        
+      {
+        "name": "constant.character.modx",
+        "begin": "\\[\\[",
+        "patterns": [
+          {
+            "name": "keyword.control.modx",
+            "match": "(!|\\+|\\+\\+|\\$|\\*|~|%)"
+          },
+          {
+            "name": "variable.parameter",
+            "match": "(&)([A-Za-z0-9_]+)(=)"
+          },
+          {
+            "name": "keyword.operator",
+            "match": "(:)([A-Za-z0-9_]+)"
+          },
+          {
+            "name": "entity.name.function",
+            "match": "([A-Za-z0-9_\\.]*)"
+          },
+          
+          {
+            "name": "string.control.single.modx",
+            "begin": "`",
+            "end": "`",
+            "patterns": [
+              {
+                "name": "constant.character.escape.modx",
+                "match": "\\."
+              }
+            ]
+          }
+        ],
+        
+        "end": "[\\]]{2,}"
+      }
+  	],
+  	"uuid": "e26dbef2-f545-436d-b34f-37386d89b03c"
+}
