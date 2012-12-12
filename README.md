@@ -14,3 +14,5 @@ and restart editor.
 
 After you can set MODX syntax in View->Syntax->MODX.
 
+![Screenshot](http://dl.dropbox.com/u/4331938/modx.png)
+
