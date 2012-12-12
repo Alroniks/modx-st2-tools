@@ -17,7 +17,7 @@
 			<key>begin</key>
 			<string>\[\[-</string>
 			<key>end</key>
-			<string>\]\]</string>
+			<string>[\]]{2,}</string>
 			<key>name</key>
 			<string>comment.block</string>
 		</dict>
